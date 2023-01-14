@@ -21,7 +21,7 @@ class Menu:
         self.game_over = self.font.render('GAME OVER', True, (255, 255, 255))
         self.game_over_rect = self.game_over.get_rect()
         self.game_over_rect.x = self.screen.get_width() // 2
-        self.game_over_rect.y = self.screen.get_height() // 2 - 100
+        self.game_over_rect.y = self.screen.get_height() // 2.2
 
 
     def create_text_field(self, text):

@@ -62,8 +62,8 @@ if __name__ == "__main__":
                 window.screen.blit(menu.line_scr, [0, 0])
                 menu.text_render(menu.game_over, (menu.game_over_rect.x, menu.game_over_rect.y))
 
-                score_text = menu.create_text_field(("Your Final Score is: " + str(window.score)))
-                menu.text_render(score_text, (window.screen.get_width()/3, window.screen.get_height()/1.5))
+                score_text = menu.create_text_field(("SCORE: " + str(window.score)))
+                menu.text_render(score_text, (window.screen.get_width()//2, window.screen.get_height()//2))
                 ball.is_alive = menu.restart
                 menu.restart = False
 
